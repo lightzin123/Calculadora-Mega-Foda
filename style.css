@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    background: linear-gradient(to bottom, #dc143c, #9c0720);
+}
+
+.calc {
+    background: black;
+    padding: 27px 12px 12px;
+    border-radius: 15px;
+}
+
+.tela {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: white;
+    font-size: 20px;
+    height: 34px;
+    margin: 0 5px;
+    padding-right: 6px;
+}
+
+td {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    background: #5e5e5e;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+td:hover {
+    background: #6f6f6f;
+}
+
+.btns {
+    border-spacing: 5px;
+}
+
