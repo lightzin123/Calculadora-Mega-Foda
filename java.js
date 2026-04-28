@@ -97,6 +97,7 @@ function calcular() {
             resultado = numAnterior * numAtual
             break
         case '/':
+            resultado = numAnterior / numAtual
             if (numAtual === 0) {
                 alert("Divisão por zero não é permitida!")
                 clearAll()
