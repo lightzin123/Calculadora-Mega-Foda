@@ -70,6 +70,17 @@ function escolherOperacao(operator) {
     if (nextNumber !== "") {
         calcular()
     }
+
+    if (operator === 'x') {
+        operacao = '*'
+    } else if (operator === '÷') {
+        operacao = '/'
+    } else {
+        operacao = operator
+    }
+
+    updateTela()
+}
     
     
     operacao = operator === 'x' ? '*' : operator
@@ -96,8 +107,7 @@ function calcular() {
         case '*':
             resultado = numAnterior * numAtual
             break
-        case '/':
-            resultado = numAnterior / numAtual
+        case '/':     
             if (numAtual === 0) {
                 alert("Divisão por zero não é permitida!")
                 clearAll()
