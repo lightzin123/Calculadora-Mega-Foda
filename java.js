@@ -70,17 +70,6 @@ function escolherOperacao(operator) {
     if (nextNumber !== "") {
         calcular()
     }
-
-    if (operator === 'x') {
-        operacao = '*'
-    } else if (operator === '÷') {
-        operacao = '/'
-    } else {
-        operacao = operator
-    }
-
-    updateTela()
-}
     
     
     operacao = operator === 'x' ? '*' : operator
